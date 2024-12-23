@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bird Owners - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="petshoplogo.png"
+          alt="Paradigm Pet Professionals Logo"
+          class="logo"
+        />
+        <h1>Paradigm Pet Professionals</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="birds.html" class="active">Birds</a></li>
+          <li>
+            <a href="#contact" onclick="showContactForm();">Contact Us</a>
+          </li>
+        </ul>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." id="searchBar" />
+          <button type="submit" onclick="searchSite()">Search</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="image-container">
+        <img src="bird1.jpg" alt="bird 1" class="pet-image" />
+        <img src="bird2.jpg" alt="bird 2" class="pet-image" />
+      </section>
+      <section class="content">
+        <h2>Caring for Your Bird: Relational Needs and Well-Being</h2>
+        <p>
+          Birds are very intriguing creatures as they can range from birds as
+          small as a Cuban bee hummingbird (about two inches long and a little
+          over 1/20 of an ounce) to as large as an ostrich. While most birds
+          fly, there are some that don't. Birds are amazing and each breed is
+          unique in its own way, particularly when it comes to their relational
+          needs and well-being. Unfortunately, birds can experience sadness and
+          depression just like humans. A number of root causes may be
+          responsible for your bird's depression such as an illness (either
+          physical or mental), losing its companion, or increasingly becoming
+          bored. Some signs to help identify if your bird is experiencing
+          depression may include the following:
+        </p>
+
+        <h3>Recognizing Signs of Distress or Depression</h3>
+        <p>
+          Unfortunately, birds can experience sadness and depression, much like
+          humans. Identifying these signs early can drastically improve your
+          bird's quality of life. Some common indicators include changes in
+          appetite, temperament, and vocalizations.
+        </p>
+        <ul>
+          <li>Reduced appetite</li>
+          <li>Becoming increasingly irritable</li>
+          <li>Aggressive behavior</li>
+          <li>Songs have a solemn or mournful tone</li>
+        </ul>
+        <p>
+          Be sure to tell your veterinarian if you see signs of any of these
+          symptoms. Just like many illnesses, identifying and treating the
+          symptoms earlier may drastically increase the lifespan of your birdie.
+        </p>
+
+        <p>
+          Our "Pexperts" are available to help you determine how best to meet
+          the relational and environmental needs of your bird. Schedule a
+          consultation today for personalized guidance!
+        </p>
+      </section>
+      <section class="pet-links">
+        <h2>Explore Pet Care Resources</h2>
+        <div class="pet-links-list">
+          <a href="cats.html">Cats</a>
+          <a href="dogs.html">Dogs</a>
+          <a href="birds.html">Birds</a>
+        </div>
+      </section>
+      <div id="contactForm" class="modal" style="display: none">
+        <div class="modal-content">
+          <span class="close" onclick="hideContactForm()">×</span>
+          <h2>Request a Virtual Consultation</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="timezone">Time Zone:</label>
+            <select id="timezone" name="timezone" required>
+              <option value="EST">Eastern Time (EST)</option>
+              <option value="CST">Central Time (CST)</option>
+              <option value="MST">Mountain Time (MST)</option>
+              <option value="PST">Pacific Time (PST)</option>
+            </select>
+
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName" required />
+
+            <label for="petType">Pet Type:</label>
+            <select id="petType" name="petType" required>
+              <option value="cat">Cat</option>
+              <option value="dog">Dog</option>
+              <option value="bird">Bird</option>
+            </select>
+
+            <label for="petAge">Pet's Age:</label>
+            <input type="text" id="petAge" name="petAge" required />
+
+            <button type="submit" class="submitButton">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
